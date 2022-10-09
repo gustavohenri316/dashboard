@@ -1,0 +1,16 @@
+<single-spa-router>
+ <link rel="stylesheet" href="./styles/global.scss">
+
+  <main>
+    <route default>
+      <div style="display: flex; justify-content: space-between">
+        <application name="@gh/menu-mfe"></application>
+        <div style="flex: 1;">
+          <route path="/dashboard">
+            <application name="@gh/dashboard-mfe"></application>
+          </route>
+        </div>
+      </div>
+    </route>
+  </main>
+</single-spa-router>
